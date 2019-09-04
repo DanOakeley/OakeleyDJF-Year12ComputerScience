@@ -1,0 +1,32 @@
+
+body {
+
+font-family: Candara, Arial;
+color: #003399;
+font-size: 12px;
+}
+
+h2 {
+
+font-size:16px;
+}
+
+h3 {
+
+font-size:14px;
+
+}
+
+#wrapper {
+
+  margin:auto;
+  background-color: #ADD8E6;
+  width: 40em
+  padding: 5px
+}
+
+#header {
+
+  height: 75px
+  border-bottom: 2px dotted #B2BCC6
+}
