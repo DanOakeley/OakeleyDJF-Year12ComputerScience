@@ -5,9 +5,9 @@
   <script>
   function show_ans()
   {
-      my_elm = document.getElementById("ans");
-      my_elm.innerHTML = "800 nautical miles"
-      my_elm.style.color = "red"
+      my_elem = document.getElementById("ans");
+      my_elem.innerHTML = "800 nautical miles";
+      my_elem.style.color = "red"
 
   }
   </script>
@@ -18,6 +18,7 @@
 <img src="./images/shackletonicon.jpg" alt="Sir Ernest Shackleton at Dulwich College">
 <h2>Ernest Shackleton (1874 - 1922)</h2>
 </div>
+
 <div id="nav">
 <ul>
 <li>Shackleton's Life</li>
@@ -26,6 +27,7 @@
 <li>James Caird</li>
 </ul>
 </div>
+
 <div id="container">
 <h3>Shackleton's Life</h3>
 
@@ -35,7 +37,9 @@
 
 <p class="snippet">During his life he made three trips to the Antarctic. As well as climbing Mount Erebus he made many important scientific discoveries. On his fourth expedition to circumnavigate the Antartic he died of a heart attack. He was buried on the Island of South Georgia.</p>
 </div>
-<div id="clearme"></div>
+
+<div class="clearme"></div>
+
 <div id="Quiz">
   <h3> Quiz </h3>
   <p> How far (according to Shackleton's wikipedia page) is it from Elephant Island to South Georgia in Nautical Miles? <span id="ans" class="myquote"> </span></p>
@@ -43,8 +47,11 @@
 <button onclick="show_ans()"> Show Answer </button>
 </p>
 </div>
+
 <div id="footer">
   Thank you for visiting my website
+</div>
+
 </div>
 </body>
 </html>
