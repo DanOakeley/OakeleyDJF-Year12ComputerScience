@@ -9,3 +9,11 @@ if nNum2 > nNum1 and nNum2 > nNum3:
     print(nNum2)
 if nNum3 > nNum1 and nNum3 > nNum2:
     print(nNum3)
+if nNum1 == nNum2 and nNum1 > nNum3:
+    print(nNum1)
+if nNum1 == nNum3 and nNum1 > nNum2:
+    print(nNum1)
+if nNum2 == nNum3 and nNum2 > nNum1:
+    print(nNum2)
+if nNum1 == nNum2 and nNum1 == nNum3:
+    print(nNum1)
