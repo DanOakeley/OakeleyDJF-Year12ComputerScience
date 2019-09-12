@@ -27,7 +27,7 @@ if nNum2 > nNum1 and nNum2 > nNum3:
     print(greatest, middle, lowest)
 #end if
 if nNum3 > nNum2 and nNum3 > nNum1:
-    greatest= nUm3
+    greatest= nNum3
     if nNum1 > nNum2:
         middle = nNum1
         lowest = nNum2
