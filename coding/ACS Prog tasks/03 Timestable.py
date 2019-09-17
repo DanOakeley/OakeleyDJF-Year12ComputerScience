@@ -7,3 +7,5 @@ for counter in range(0, 13):
 
 
 
+###ACS There are not enough comments especially at the end of the for and while statements
+###ACS - Logic fine but should start with 0
