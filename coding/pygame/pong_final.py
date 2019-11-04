@@ -44,10 +44,14 @@ def Main_Menu():
     Title = "Main Menu"
     MenuLine1 = "Pick an Option:"
     MenuLine2 = "Enter [1] To Start Pong"
-#    MenuLine3 = "Enter [2] To open Pong settings"
+    MenuLine3 = "Enter [2] To open Pong settings"
     MenuLine4 = "Enter [3] To Quit"
-#    CloseText = "To close the menu press [ESC]"
-
+    P1Instructions1 = "Player 1 Controls:"
+    P1Instructions2 = "[W] to move up"
+    P1Instructions3 = "[S] to move down"
+    P2Instructions1 = "Player 2 Controls:"
+    P2Instructions2 = "[UP] to move up"
+    P2Instructions3 = "[DOWN] to move down"
     #Menu loop
     while not MainMenuDone:
         for event in pygame.event.get():
@@ -71,12 +75,18 @@ def Main_Menu():
         screen.fill (WHITE)
         # -- Draw here
         pygame.draw.rect(screen, YELLOW, (0,0,display_width,150))
+        pygame.draw.rect(screen, BLUE, (430,270,300,250))
         drawTextBlack(screen, str(Title), 50, 150, 50)
         drawTextBlack(screen, str(MenuLine1), 20, 60, 170)
         drawTextBlack(screen, str(MenuLine2), 20, 90, 220)
-#        drawTextBlack(screen, str(MenuLine3), 20, 121, 240)
+        drawTextBlack(screen, str(MenuLine3), 20, 121, 240)
         drawTextBlack(screen, str(MenuLine4), 20, 66, 260)
-#        drawTextBlack(screen, str(CloseText), 20, 120, 450)
+        drawTextWhite(screen, str(P1Instructions1), 20, 520, 280)
+        drawTextWhite(screen, str(P1Instructions2), 20,561, 320)
+        drawTextWhite(screen, str(P1Instructions3), 20,570, 340)
+        drawTextWhite(screen, str(P2Instructions1), 20, 520, 380)
+        drawTextWhite(screen, str(P2Instructions2), 20, 525, 420)
+        drawTextWhite(screen, str(P2Instructions3), 20,550, 440)
 
 #        drawText(screen, str(Leftscore), 18, 20, 10)
         # -- flip display to reveal new position of objects
@@ -234,6 +244,7 @@ def Pong_Game():
 
 
 #Main Code
+#Settings_Menu()
 Main_Menu()
 #Pong_Game()
 pygame.quit()

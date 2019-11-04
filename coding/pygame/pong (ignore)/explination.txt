@@ -1,0 +1,2 @@
+the game runs from [main game.py] pong code in pong.py
+whole game funcitons in wholegame.py
